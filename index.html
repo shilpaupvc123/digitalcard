@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Digital Card</title>
+</head>
+<body>  
+    <div class="card">
+        <div class="wrapper">
+            <div class="logo-container">
+                <img src="./shilpa logo fin (2).png"alt="logo"width="190px">
+                <div class="border"></div>
+                <p>Mr. Jithendar</p>
+                <div class="social-con">
+                    <p class="social-i-con"><a href="https://www.facebook.com/Shilpaupvs-139547978261118"><i class="bi bi-facebook"></i></a></p>
+                    <p class="social-i-con"><i class="bi bi-whatsapp"></i></p>
+                    <p class="social-i-con"><a href="https://www.instagram.com/upvcshilpa/"><i class="bi bi-instagram"></i></a></p>
+                    <p class="social-i-con"><a href="https://www.youtube.com/channel/UC2GDHo_vGxo6QVC7W1tuk7Q"><i class="bi bi-youtube"></i></a></p>
+                </div>
+            </div>
+            <div class="det-con">
+                <div class="icons-con">
+                    <a href="phone:8688508896"><p class="soc-ico"><i class="bi bi-telephone-fill"></i></p></a>
+                    <a href="https://goo.gl/maps/QDUzppH2yxAad9yR6"target="_blank"<p class="soc-ico"><i class="bi bi-geo-alt-fill"></i></p></a>
+                    <a href="mailto:shilpaupvc@shilpaupvc.com"><p class="soc-ico"><i class="bi bi-envelope-fill"></i></p></a>
+                    <a href="http://shilpaupvc.com/"target="_blank"><p class="web-ico soc-ico"><i class="bi bi-globe"></i></p></a>
+                </div>
+                <div class="det-info-con">
+                    <div class="info-con"><p>8688508896 , 9014321499</p></div>
+                    <div class="info-con"><p>Beside Abhiram gardens ,<br>Hanamkonda</p></div> 
+                    <div class="info-con"><p>shilpaupvc@shilpaupvc.com</p></div>
+                    <div class="info-con"><p>shilpaupvc.com</p></div>
+                </div>
+            </div>
+            <div style="margin-top:10px;"> 
+                <input placeholder="Enter whatsapp number"type="number">
+                <button class="share-but"><a href="whatsapp:contact=8688508896@s.whatsapp.com&message=I would like to chat with you!"target="_blank">Share on Whatsapp</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    .wrapper{
+        width: 100%;
+    }
+    .card{
+        width: 360px;
+        border:1px solid gainsboro;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+        border-radius: 9px;
+        height: 100vh;
+        justify-content: center;
+        background-image: url('./Untitled\ design.jpg');
+        background-repeat: no-repeat;
+
+    }
+    .logo-container>img{
+        position: relative;
+        margin: auto;
+        border-radius: 5px;
+    }
+    .logo-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+    .border{
+        width: 80%;
+        height: 0.2px;
+        border:1px solid rgb(8,84,196);
+    }
+    .social-con{
+        display: flex;
+        gap:10px;
+    }
+    .social-i-con{
+        padding: 15px;
+        border-radius: 50%;
+        background-color: rgb(8,84,196);
+        color:white;
+    }
+    .social-i-con:hover{
+        transform: translateY(-10px);
+        transition: 0.4s all ease-in-out;
+        cursor: pointer;
+        border:1px solid rgb(209, 54, 54);
+    }
+    .det-con{
+        width: 90%;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+    .icons-con{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(8,84,196);
+    }
+    .icons-con > p{
+        font-size: 22px;
+        color:white;
+    }
+    .det-info-con{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .info-con{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .share-but{
+        padding: 15px;
+        border:1px solid white;
+        background-color: rgb(14, 102, 14);
+        color:white;
+    }
+    input{
+        padding: 15px;
+        outline-color: rgb(8,84,196);
+        width: 150px;
+    }
+    .share-but:hover{
+        cursor: pointer;
+    }
+    .web-ico{
+        margin-bottom: -6px;
+    }
+    .info-con > p{
+        font-size: 18px;
+    }
+    .soc-ico:hover{
+        transform: translateY(-10px);
+        transition: 0.3s all ease-in-out;
+        cursor: pointer;
+    }
+    .icons-con > a{
+        color:white;
+    }
+    .share-but > a{
+        color:white;
+        text-decoration: none;
+    }
+    .social-i-con > a{
+        color:white;
+    }
+</style>
