@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <title>Digital Card</title>
+    <title>Shilpa UPVC DIGI Card</title>
 </head>
 <body>  
-    <div class="card">
+    <div class="card"id="card">
         <div class="wrapper">
             <div class="logo-container">
                 <img src="./shilpa logo fin (2).png"alt="logo"width="190px">
@@ -16,7 +16,7 @@
                 <p>Mr. Jithendar</p>
                 <div class="social-con">
                     <p class="social-i-con"><a href="https://www.facebook.com/Shilpaupvs-139547978261118"><i class="bi bi-facebook"></i></a></p>
-                    <p class="social-i-con"><i class="bi bi-whatsapp"></i></p>
+                    <p class="social-i-con"><a href="whatsapp:contact=8688508896@s.whatsapp.com&message=I would like to chat with you!"target="_blank"><i class="bi bi-whatsapp"></i></a></p>
                     <p class="social-i-con"><a href="https://www.instagram.com/upvcshilpa/"><i class="bi bi-instagram"></i></a></p>
                     <p class="social-i-con"><a href="https://www.youtube.com/channel/UC2GDHo_vGxo6QVC7W1tuk7Q"><i class="bi bi-youtube"></i></a></p>
                 </div>
@@ -39,6 +39,15 @@
                 <input placeholder="Enter whatsapp number"type="number">
                 <button class="share-but"><a href="whatsapp:contact=8688508896@s.whatsapp.com&message=I would like to chat with you!"target="_blank">Share on Whatsapp</a></button>
             </div>
+            <div class="show-btn-con">
+                <button class="show-qr"onClick="transform()">Show QR</button>
+            </div>
+        </div>
+        <div class="wrapper2">
+            <div class="back-wrapper">
+                <img src="./qrshilpafb.png"width="200px"height="200px">
+                <button class="show-qr"onClick="transform2()">go back</button>
+            </div>
         </div>
     </div>
 </body>
@@ -49,7 +58,17 @@
         padding:0px;
     }
     .wrapper{
-        width: 100%;
+        width: 360px;
+        margin: auto;
+        position: absolute;
+        backface-visibility: hidden;
+    }
+    .wrapper2{
+        width: 360px;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
     }
     .card{
         width: 360px;
@@ -62,14 +81,15 @@
         border-radius: 9px;
         height: 100vh;
         justify-content: center;
-        background-image: url('./Untitled\ design.jpg');
+        background-image: url('./background.jpg');
         background-repeat: no-repeat;
-
+        transition: all 0.5s ease;
+        transform-style: preserve-3d;
     }
     .logo-container>img{
         position: relative;
         margin: auto;
-        border-radius: 5px;
+        border-radius: 8px;
     }
     .logo-container{
         display: flex;
@@ -81,6 +101,7 @@
     }
     .border{
         width: 80%;
+
         height: 0.2px;
         border:1px solid rgb(8,84,196);
     }
@@ -144,9 +165,13 @@
         padding: 15px;
         outline-color: rgb(8,84,196);
         width: 150px;
+        border-radius: 7px;
+        border:1px solid gray;
     }
     .share-but:hover{
         cursor: pointer;
+        background-color: rgb(37, 56, 9);
+        transition: 0.3s all ease-in-out;
     }
     .web-ico{
         margin-bottom: -6px;
@@ -169,4 +194,42 @@
     .social-i-con > a{
         color:white;
     }
+    .show-qr{
+        width:80px;
+        height: 30px;
+        margin-top: 10px;
+        border-radius: 9px;
+        border:1px solid gainsboro;
+        color:rgb(8,84,196);
+        background-color: white;
+    }
+    .show-btn-con{
+        width: 100%;
+        height:auto;
+        display: flex;
+        justify-content: center;
+    }
+    .show-qr:hover{
+        cursor: pointer;
+        background-color: gainsboro;
+        transition: 0.3s all ease-in;
+        color:blue;
+    }
+    .back-wrapper{
+        width: 360px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 </style>
+<script>
+    let card = document.getElementById('card');
+    const transform = () =>{
+        card.style.transform = "rotateY(180deg)";
+    }
+    const transform2 = () =>{
+        card.style.transform = "rotate(0deg)";
+    }
+</script>
